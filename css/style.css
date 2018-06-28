@@ -1,1 +1,43 @@
-/* YeyeYeee código aquí */
+body{
+    background-color:rgb(143, 205, 224);
+}
+header{
+    text-align: center;
+}
+img{
+    width: 30%;
+    margin-top: 5%;
+}
+h1{
+    font-size: 30px;
+}
+.btnISesion{
+    text-align: center;
+}
+.btnPage1{
+    text-align: center;
+}
+.btn{
+    color: black;
+}
+.btn-large{
+    color: black;
+}
+.input-field{
+    text-align: center;
+}
+.divPage3{
+    width: 100%;
+    height: 40px;;
+    background-color: white;
+    border: 1px solid black;
+}
+.logo2{
+    width: 10%;
+    float: right;
+    margin-bottom: 5%;
+}
+.btnPage2{
+width: 100%;
+font-family:sans-serif center;
+}

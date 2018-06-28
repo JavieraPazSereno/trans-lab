@@ -1,1 +1,56 @@
-<!-- Wowowoyipiyouuu tu código acá -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bip</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container">
+      <div class="row">
+          <div id="logo" class="col s12">
+              <img src="docs/imagen.png" alt="logo">
+          </div>
+      <div class="row"></div>
+      <div class="col s12">
+          <h1>TRANS-LAB</h1>
+      </div>
+    </header>
+    <section class="container">
+        <div class="row">               
+            <div id="inputM" class="input-field col s12">
+                <input id="email" type="email" class="validate"  onblur="validarMail()"></input>
+                <span class="helper-text" data-error="wrong" data-success="right">Ingresa tu email</span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="inputC" class="input-field col s12">
+                <input id="clave" type="password" type="text" class="validate"/>
+                <span class="helper-text" data-error="wrong" data-success="right">Contraseña (máx. 8 números)</span>
+            </div>
+            </div>
+        <div class="row">
+            <div class="btnISesion col s12">
+                <a class= "waves-effect amber darken-1 btn" onclick="iniciarSesion()">INICIAR SESION</a>   
+            </div>
+        </div>
+        <div class="row">
+                <div class="btnPage1 col s12">
+                        <a class="waves-effect amber darken-1 btn">¿olvidaste tu contraseña?</a>                
+                    </div>
+                </div>   
+        <div class="row">
+                <div class="btnPage1 col s12">
+                        <a class="waves-effect amber darken-1 btn">Registrate AQUI</a>               
+                </div>               
+    </section>
+        
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    </body>
+</html>
