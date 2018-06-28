@@ -29,11 +29,42 @@ function validarLargo() {
 }
 
 function iniciarSesion() {
-    window.open('index2.html','page2','_parent');
+    window.location = ("index2.html");
 }
  
 
 //Funciones Page 2
+function page3() 
+{ 
+    window.location = ("index3.html"); 
+} 
+
+function page4()
+{
+    window.location = ("index4.html"); 
+}
+function page5()
+{
+    window.location = ("index5.html"); 
+}
+
+
 
 
 //funciones Page 3
+
+const inputNumTarjeta = document.getElementById("numeroTarjeta").value;
+const containerSaldo = document.getElementById("saldo")
+inputText.addEventListener("click", (event) => {
+        let saldo = inputNumTarjeta.value;
+        inputNumTarjeta.value = ""; 
+
+        fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${numberBip}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            renderInfo(data);
+        })
+    })
+
+

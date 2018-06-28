@@ -41,3 +41,7 @@ h1{
 width: 100%;
 font-family:sans-serif center;
 }
+#divPhoto{
+    background-color:rgb(185, 183, 183);
+    border-radius: 40px; 
+}
