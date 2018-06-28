@@ -34,11 +34,11 @@ function iniciarSesion() {
  
 
 //Funciones Page 2
+
 function page3() 
 { 
     window.location = ("index3.html"); 
 } 
-
 function page4()
 {
     window.location = ("index4.html"); 
@@ -49,22 +49,26 @@ function page5()
 }
 
 
-
-
 //funciones Page 3
 
-const inputNumTarjeta = document.getElementById("numeroTarjeta").value;
-const containerSaldo = document.getElementById("saldo")
-inputText.addEventListener("click", (event) => {
-        let saldo = inputNumTarjeta.value;
-        inputNumTarjeta.value = ""; 
+document.getElementById("verSaldo").addEventListener('click, cargarJson');
 
-        fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${numberBip}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            renderInfo(data);
-        })
+function cargarJson()
+{
+const numTarjeta = document.getElementById('numeroTarjeta').value;
+let url = '';
+url += 'http://www.psep.cl/api/Bip.php?&'
+url += `numberBip=${numTarjeta}`
+fetch(url)
+    .then(respuesta => respuesta.json())
+    .then(data => {
+        console.log(data)
     })
+    .catch(error => console.log(error))
+};
+
+//funciones Page 5
+
+document.getElementById('').value = emailUser;
 
 
